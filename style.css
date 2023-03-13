@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    margin: 0px;
+    
+}
+.casilla{
+    border: 1px black solid;
+    width: 9vw;
+    height: 6vh;
+}
+.tablero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
