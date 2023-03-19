@@ -1,16 +1,90 @@
-main{
-    display: flex;
-    margin: 0px;
-    
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    background-color: aliceblue;
+    user-select: none;
+    font-family: 'Bangers', cursive;
 }
-.casilla{
-    border: 1px black solid;
+
+main {
+    
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contador{
+    z-index: 1;
+    position: absolute;
+
+    background-color: transparent;
+
+    font-size: 200px;
+
+    /* animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+
+}
+
+.casilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px rgb(50, 37, 37) solid;
     width: 9vw;
     height: 6vh;
+
+    color: #21190a;
+
+    font-size: 35px;
 }
-.tablero{
+button{
+    width: 9vw;
+    height: 6vh;
+    cursor: pointer;
+
+    font-size: 30px;
+    background-color: #51D92B;
+
+    border: 0px;
+}
+/* .reset{
+  display: none;
+}
+button:hover{
+
+} */
+i{
+    background-color: #51D92B;
+    color: #0b1f05;
+}
+.tablero {
+    z-index: 0;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* @keyframes swirl-in-fwd {
+    0% {
+      transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+  } */
+  
